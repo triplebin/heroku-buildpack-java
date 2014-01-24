@@ -117,4 +117,37 @@
     </mirror>
   </mirrors>
 
+    <profiles>
+        <profile>
+            <id>triplebin</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>triplebin-release</id>
+                    <name>tripleBin Release Repository</name>
+                    <url>https://repository-triplebin.forge.cloudbees.com/release/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>triplebin-snapshot</id>
+                    <name>tripleBin Release Repository</name>
+                    <url>https://repository-triplebin.forge.cloudbees.com/snapshot/</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
 </settings>
